@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+ 
+# Virtual environments
+venv/
+env/
+ENV/
+ 
+# Environment variables (secrets - never commit these)
+.env
+.env.local
+ 
+# macOS
+.DS_Store
+ 
+# VS Code
+.vscode/
+ 
+# Distribution / packaging
+build/
+dist/
+*.egg
+
+# Lambda deployment artifacts (rebuilt from agent_api/ source + dependencies)
+agent_api/deployment.zip
+agent_api/package/
+
+knowledge_base/
