@@ -24,5 +24,8 @@ build/
 dist/
 *.egg
 
+# Lambda deployment artifacts (rebuilt from agent_api/ source + dependencies)
+agent_api/deployment.zip
+agent_api/package/
+
 knowledge_base/
- 
