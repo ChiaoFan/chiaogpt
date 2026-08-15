@@ -79,16 +79,16 @@ const FEATURES: { icon: LucideIcon; title: string; description: string }[] = [
 ]
 
 const TECH_STACK = [
-  "React",
-  "TypeScript",
+  "Amazon Bedrock",
   "FastAPI",
   "Python",
-  "AWS Lambda",
-  "Amazon Bedrock",
   "Claude Haiku",
   "Supabase",
   "pgvector",
   "AWS IAM",
+  "AWS Lambda",
+  "React",
+  "TypeScript", 
 ]
 
 function isConnector(item: ArchStep | Connector): item is Connector {

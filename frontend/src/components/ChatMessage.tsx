@@ -146,9 +146,9 @@ export function ChatMessage({
             <Markdown content={message.content} />
           )}
         </div>
-        {!message.pending && !message.error && message.sources && (
+        {/* {!message.pending && !message.error && message.sources && (
           <SourcePill sources={message.sources} />
-        )}
+        )} */}
         {!message.pending && (
           <div className="mt-1.5 flex items-center">
             <CopyButton text={message.content} />
