@@ -3,7 +3,7 @@ import { Copy, Check, Pencil } from "lucide-react"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Markdown } from "@/components/Markdown"
-import { SourcePill } from "@/components/SourcePill"
+// import { SourcePill } from "@/components/SourcePill"
 import { cn } from "@/lib/utils"
 import type { ChatMessage as ChatMessageType } from "@/types"
 
@@ -146,9 +146,9 @@ export function ChatMessage({
             <Markdown content={message.content} />
           )}
         </div>
-        {!message.pending && !message.error && message.sources && (
+        {/* {!message.pending && !message.error && message.sources && (
           <SourcePill sources={message.sources} />
-        )}
+        )} */}
         {!message.pending && (
           <div className="mt-1.5 flex items-center">
             <CopyButton text={message.content} />

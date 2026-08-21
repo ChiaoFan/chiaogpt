@@ -16,7 +16,7 @@ export function Header() {
             ChiaoGPT
           </h1>
           <p className="text-xs text-muted-foreground">
-            Lead Solutions Engineer
+            Chiao-Fan - Lead Solutions Engineer
           </p>
         </div>
       </div>
