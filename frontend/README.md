@@ -1,32 +1,21 @@
-# React + TypeScript + Vite
+# ChiaoGPT frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React chat UI for [ChiaoGPT](../README.md), a personal RAG chatbot. Built with Vite, TypeScript, Tailwind CSS v4, and shadcn/ui.
 
-Currently, two official plugins are available:
+**Live demo:** [https://chiaogpt.chiaofan.co/](https://chiaogpt.chiaofan.co/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+For the full system (API, retrieval pipeline, architecture, tech stack), see the [project README](../README.md).
 
-## React Compiler
+## Commands
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```
+npm install      # install dependencies
+npm run dev       # start the dev server
+npm run build      # type-check and build for production
+npm run lint         # run oxlint
+npm run preview        # preview the production build locally
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Environment
+
+The API endpoint defaults to the deployed Lambda URL hardcoded in `src/lib/api.ts`. To point at a different backend, set `VITE_API_URL` in a `.env` file at build time.

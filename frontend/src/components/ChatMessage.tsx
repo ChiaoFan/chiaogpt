@@ -3,7 +3,7 @@ import { Copy, Check, Pencil } from "lucide-react"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Markdown } from "@/components/Markdown"
-import { SourcePill } from "@/components/SourcePill"
+// import { SourcePill } from "@/components/SourcePill"
 import { cn } from "@/lib/utils"
 import type { ChatMessage as ChatMessageType } from "@/types"
 
